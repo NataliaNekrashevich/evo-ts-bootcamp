@@ -1,21 +1,18 @@
 import React, {Component} from "react";
-import SortingField from "../components/sorting-field/sorting-field";
-import Menu from "../components/menu/menu";
+import {SortingField} from "../components/sorting-field/sorting-field";
+import {Menu} from "../components/menu/menu";
+import {SortState, sortStep} from "../business-logic/bubble-sort-realization";
 
-type AppContainerState = {
-    isSorted: boolean,
+type AppSortingContainerState = {
     isPaused: boolean,
     delay: number,
-    array: number[],
     arrayLength: number,
-    i: number,
-    j: number,
-};
+} & SortState;
 
-class Container extends Component<{}, AppContainerState> {
+export class SortingContainer extends Component<{}, AppSortingContainerState> {
     readonly defaultDelay = 1000;
     readonly defaultArrayLength = 15;
-    private interval: any;
+    private interval: NodeJS.Timer | undefined;
 
     constructor(props: {}) {
         super(props);
@@ -30,48 +27,52 @@ class Container extends Component<{}, AppContainerState> {
         };
     }
 
-    startSorting(delay: number = this.state.delay): void {
+    private static clearInterval(interval: NodeJS.Timer | undefined): void {
+        if (interval) clearInterval(interval);
+    }
+
+    private startSorting(delay: number = this.state.delay): void {
         this.interval = setInterval(
             () => {
                 const newState = sortStep(this.state);
                 this.setState({...newState});
                 if (newState.isSorted) {
-                    this.componentWillUnmount();
+                    SortingContainer.clearInterval(this.interval);
                 }
             }, delay
         )
     }
 
+    private fillArray = (count: number = this.defaultArrayLength): number[] =>
+        new Array(count).fill(0).map(() => Math.random());
+
     changeDelay = (delay: number): void => {
-        this.componentWillUnmount();
+        SortingContainer.clearInterval(this.interval);
         this.setState({delay});
         if (!this.state.isPaused) this.startSorting(delay);
     }
 
     setPause = (isPaused: boolean): void => {
-        isPaused ? this.componentWillUnmount() : this.componentDidMount();
+        isPaused ? SortingContainer.clearInterval(this.interval) : this.startSorting();
         this.setState({isPaused});
     }
 
     initializeArray = (arrayLength: number = this.defaultArrayLength) => {
-        this.componentWillUnmount();
+        SortingContainer.clearInterval(this.interval);
         this.setState({array: this.fillArray(arrayLength), isSorted: false, i: arrayLength - 1, j: 0, arrayLength});
         this.startSorting();
     }
-
-    fillArray = (count: number = this.defaultArrayLength): number[] =>
-        new Array(count).fill(0).map(() => Math.random());
 
     componentDidMount(): void {
         this.startSorting();
     }
 
     componentWillUnmount(): void {
-        clearInterval(this.interval)
+        SortingContainer.clearInterval(this.interval);
     }
 
     render(): JSX.Element {
-        const {isSorted, isPaused, delay, array, i, j} = this.state
+        const {isSorted, isPaused, delay, array, i, j} = this.state;
         return (
             <>
                 <SortingField array={array}
@@ -90,31 +91,4 @@ class Container extends Component<{}, AppContainerState> {
             </>
         )
     }
-}
-
-export default Container
-
-
-export const sortStep = (state: AppContainerState): AppContainerState => {
-    let {array, i, j, isSorted} = state;
-    if (i <= 0) {
-        return {
-            ...state,
-            isSorted: true
-        };
-    }
-    if (array[j] > array[j + 1]) {
-        [array[j], array[j + 1]] = [array[j + 1], array[j]]
-    }
-    if (++j >= i) {
-        i--;
-        j = 0;
-    }
-    return {
-        ...state,
-        isSorted,
-        array,
-        i,
-        j,
-    };
 }

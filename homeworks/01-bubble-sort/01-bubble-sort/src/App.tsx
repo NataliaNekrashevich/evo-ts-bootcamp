@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./container/container";
+import {SortingContainer} from "./container/sorting-container";
 
 const App = () => {
   const title = 'Bubble sorting'
@@ -7,7 +7,7 @@ const App = () => {
   return (
       <main className="wrapper">
         <h1>{title}</h1>
-        <Container/>
+        <SortingContainer/>
       </main>
   );
 };

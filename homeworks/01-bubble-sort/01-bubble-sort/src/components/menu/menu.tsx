@@ -10,7 +10,7 @@ type MenuProps = {
     onArrayInitialization: () => void
 };
 
-class Menu extends Component<MenuProps, {}> {
+export class Menu extends Component<MenuProps, {}> {
     readonly SORTED_SUCCESS = 'sorted success';
     readonly NOT_SORTED = 'not sorted yet';
     readonly START = 'Start';
@@ -49,5 +49,3 @@ class Menu extends Component<MenuProps, {}> {
         this.props.onArrayInitialization()
     }
 }
-
-export default Menu
