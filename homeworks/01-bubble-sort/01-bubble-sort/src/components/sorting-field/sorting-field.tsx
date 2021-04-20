@@ -1,14 +1,10 @@
 import {Component} from "react";
+import {SortState} from "../../business-logic/bubble-sort-realization";
 import "./sorting-field.scss"
 
-type SortingFieldProps = {
-    array: number[]
-    isSorted: boolean,
-    i: number,
-    j: number,
-};
+type SortingFieldProps = SortState;
 
-class SortingField extends Component<SortingFieldProps, {}> {
+export class SortingField extends Component<SortingFieldProps, {}> {
     readonly valueTransformScale = 1000;
     readonly cellTransformationScale = 5;
 
@@ -38,5 +34,3 @@ class SortingField extends Component<SortingFieldProps, {}> {
         )
     }
 }
-
-export default SortingField
