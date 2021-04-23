@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+
+  .image {
+    flex: 3 0 15%;
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      transform-origin: center center;
+      border: 10px rgba(126, 227, 193, 0.8) solid;
+    }
+  }
+}
