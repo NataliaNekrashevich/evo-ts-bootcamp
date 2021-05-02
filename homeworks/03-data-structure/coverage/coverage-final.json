@@ -1,0 +1,2406 @@
+{
+  "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/implementations/binary-tree-search.ts": {
+    "path": "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/implementations/binary-tree-search.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 41
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 56
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 38
+        },
+        "end": {
+          "line": 5,
+          "column": 48
+        }
+      },
+      "3": {
+        "start": {
+          "line": 8,
+          "column": 8
+        },
+        "end": {
+          "line": 8,
+          "column": null
+        }
+      },
+      "4": {
+        "start": {
+          "line": 7,
+          "column": 24
+        },
+        "end": {
+          "line": 7,
+          "column": 46
+        }
+      },
+      "5": {
+        "start": {
+          "line": 11,
+          "column": 4
+        },
+        "end": {
+          "line": 13,
+          "column": null
+        }
+      },
+      "6": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 12,
+          "column": null
+        }
+      },
+      "7": {
+        "start": {
+          "line": 15,
+          "column": 12
+        },
+        "end": {
+          "line": 25,
+          "column": null
+        }
+      },
+      "8": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": null
+        }
+      },
+      "9": {
+        "start": {
+          "line": 17,
+          "column": 12
+        },
+        "end": {
+          "line": 17,
+          "column": null
+        }
+      },
+      "10": {
+        "start": {
+          "line": 20,
+          "column": 8
+        },
+        "end": {
+          "line": 22,
+          "column": null
+        }
+      },
+      "11": {
+        "start": {
+          "line": 21,
+          "column": 12
+        },
+        "end": {
+          "line": 21,
+          "column": null
+        }
+      },
+      "12": {
+        "start": {
+          "line": 24,
+          "column": 8
+        },
+        "end": {
+          "line": 24,
+          "column": null
+        }
+      },
+      "13": {
+        "start": {
+          "line": 26,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": null
+        }
+      },
+      "14": {
+        "start": {
+          "line": 5,
+          "column": 13
+        },
+        "end": {
+          "line": 5,
+          "column": 29
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 26,
+            "column": null
+          }
+        }
+      },
+      "1": {
+        "name": "BinarySearchTree",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 4
+          },
+          "end": {
+            "line": 7,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 46
+          },
+          "end": {
+            "line": 9,
+            "column": 5
+          }
+        }
+      },
+      "2": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 4
+          },
+          "end": {
+            "line": 11,
+            "column": 7
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 21
+          },
+          "end": {
+            "line": 13,
+            "column": 5
+          }
+        }
+      },
+      "3": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 4
+          },
+          "end": {
+            "line": 15,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 54
+          },
+          "end": {
+            "line": 25,
+            "column": 5
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 8
+          },
+          "end": {
+            "line": 8,
+            "column": 19
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 8,
+              "column": 8
+            },
+            "end": {
+              "line": 8,
+              "column": 19
+            }
+          },
+          {
+            "start": {
+              "line": 8,
+              "column": 19
+            },
+            "end": {
+              "line": 8,
+              "column": null
+            }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 8
+          },
+          "end": {
+            "line": 18,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 16,
+              "column": 8
+            },
+            "end": {
+              "line": 18,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 16,
+              "column": 8
+            },
+            "end": {
+              "line": 18,
+              "column": null
+            }
+          }
+        ]
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 31
+          },
+          "end": {
+            "line": 17,
+            "column": 58
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 31
+            },
+            "end": {
+              "line": 17,
+              "column": 58
+            }
+          },
+          {
+            "start": {
+              "line": 17,
+              "column": 61
+            },
+            "end": {
+              "line": 17,
+              "column": 66
+            }
+          }
+        ]
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 8
+          },
+          "end": {
+            "line": 22,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": null
+            }
+          }
+        ]
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 32
+          },
+          "end": {
+            "line": 21,
+            "column": 60
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 32
+            },
+            "end": {
+              "line": 21,
+              "column": 60
+            }
+          },
+          {
+            "start": {
+              "line": 21,
+              "column": 63
+            },
+            "end": {
+              "line": 21,
+              "column": 68
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 4,
+      "7": 1,
+      "8": 13,
+      "9": 3,
+      "10": 10,
+      "11": 8,
+      "12": 2,
+      "13": 1,
+      "14": 1
+    },
+    "f": {
+      "0": 1,
+      "1": 1,
+      "2": 4,
+      "3": 13
+    },
+    "b": {
+      "0": [
+        1,
+        1
+      ],
+      "1": [
+        3,
+        10
+      ],
+      "2": [
+        2,
+        1
+      ],
+      "3": [
+        8,
+        2
+      ],
+      "4": [
+        7,
+        1
+      ]
+    }
+  },
+  "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/implementations/binary-tree.ts": {
+    "path": "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/implementations/binary-tree.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 53
+        }
+      },
+      "1": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 45
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 13
+        }
+      },
+      "3": {
+        "start": {
+          "line": 7,
+          "column": 26
+        },
+        "end": {
+          "line": 7,
+          "column": 43
+        }
+      },
+      "4": {
+        "start": {
+          "line": 10,
+          "column": 4
+        },
+        "end": {
+          "line": 12,
+          "column": null
+        }
+      },
+      "5": {
+        "start": {
+          "line": 11,
+          "column": 8
+        },
+        "end": {
+          "line": 11,
+          "column": 62
+        }
+      },
+      "6": {
+        "start": {
+          "line": 14,
+          "column": 4
+        },
+        "end": {
+          "line": 17,
+          "column": null
+        }
+      },
+      "7": {
+        "start": {
+          "line": 15,
+          "column": 8
+        },
+        "end": {
+          "line": 15,
+          "column": 25
+        }
+      },
+      "8": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 16,
+          "column": 20
+        }
+      },
+      "9": {
+        "start": {
+          "line": 19,
+          "column": 4
+        },
+        "end": {
+          "line": 23,
+          "column": null
+        }
+      },
+      "10": {
+        "start": {
+          "line": 20,
+          "column": 8
+        },
+        "end": {
+          "line": 20,
+          "column": 80
+        }
+      },
+      "11": {
+        "start": {
+          "line": 20,
+          "column": 47
+        },
+        "end": {
+          "line": 20,
+          "column": 80
+        }
+      },
+      "12": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 22,
+          "column": 49
+        }
+      },
+      "13": {
+        "start": {
+          "line": 25,
+          "column": 12
+        },
+        "end": {
+          "line": 34,
+          "column": null
+        }
+      },
+      "14": {
+        "start": {
+          "line": 26,
+          "column": 8
+        },
+        "end": {
+          "line": 26,
+          "column": 29
+        }
+      },
+      "15": {
+        "start": {
+          "line": 26,
+          "column": 19
+        },
+        "end": {
+          "line": 26,
+          "column": 29
+        }
+      },
+      "16": {
+        "start": {
+          "line": 28,
+          "column": 28
+        },
+        "end": {
+          "line": 28,
+          "column": 77
+        }
+      },
+      "17": {
+        "start": {
+          "line": 29,
+          "column": 8
+        },
+        "end": {
+          "line": 32,
+          "column": null
+        }
+      },
+      "18": {
+        "start": {
+          "line": 36,
+          "column": 12
+        },
+        "end": {
+          "line": 50,
+          "column": null
+        }
+      },
+      "19": {
+        "start": {
+          "line": 37,
+          "column": 8
+        },
+        "end": {
+          "line": 37,
+          "column": 29
+        }
+      },
+      "20": {
+        "start": {
+          "line": 37,
+          "column": 19
+        },
+        "end": {
+          "line": 37,
+          "column": 29
+        }
+      },
+      "21": {
+        "start": {
+          "line": 39,
+          "column": 21
+        },
+        "end": {
+          "line": 39,
+          "column": 54
+        }
+      },
+      "22": {
+        "start": {
+          "line": 40,
+          "column": 22
+        },
+        "end": {
+          "line": 40,
+          "column": 56
+        }
+      },
+      "23": {
+        "start": {
+          "line": 42,
+          "column": 8
+        },
+        "end": {
+          "line": 49,
+          "column": null
+        }
+      },
+      "24": {
+        "start": {
+          "line": 44,
+          "column": 16
+        },
+        "end": {
+          "line": 44,
+          "column": 54
+        }
+      },
+      "25": {
+        "start": {
+          "line": 46,
+          "column": 16
+        },
+        "end": {
+          "line": 46,
+          "column": 54
+        }
+      },
+      "26": {
+        "start": {
+          "line": 48,
+          "column": 16
+        },
+        "end": {
+          "line": 48,
+          "column": 54
+        }
+      },
+      "27": {
+        "start": {
+          "line": 52,
+          "column": 12
+        },
+        "end": {
+          "line": 58,
+          "column": null
+        }
+      },
+      "28": {
+        "start": {
+          "line": 53,
+          "column": 8
+        },
+        "end": {
+          "line": 53,
+          "column": 46
+        }
+      },
+      "29": {
+        "start": {
+          "line": 53,
+          "column": 35
+        },
+        "end": {
+          "line": 53,
+          "column": 46
+        }
+      },
+      "30": {
+        "start": {
+          "line": 55,
+          "column": 28
+        },
+        "end": {
+          "line": 55,
+          "column": 49
+        }
+      },
+      "31": {
+        "start": {
+          "line": 56,
+          "column": 25
+        },
+        "end": {
+          "line": 56,
+          "column": 105
+        }
+      },
+      "32": {
+        "start": {
+          "line": 56,
+          "column": 97
+        },
+        "end": {
+          "line": 56,
+          "column": 105
+        }
+      },
+      "33": {
+        "start": {
+          "line": 57,
+          "column": 8
+        },
+        "end": {
+          "line": 57,
+          "column": 63
+        }
+      },
+      "34": {
+        "start": {
+          "line": 60,
+          "column": 4
+        },
+        "end": {
+          "line": 81,
+          "column": 6
+        }
+      },
+      "35": {
+        "start": {
+          "line": 61,
+          "column": 26
+        },
+        "end": {
+          "line": 61,
+          "column": 46
+        }
+      },
+      "36": {
+        "start": {
+          "line": 63,
+          "column": 8
+        },
+        "end": {
+          "line": 80,
+          "column": null
+        }
+      },
+      "37": {
+        "start": {
+          "line": 64,
+          "column": 12
+        },
+        "end": {
+          "line": 70,
+          "column": null
+        }
+      },
+      "38": {
+        "start": {
+          "line": 65,
+          "column": 16
+        },
+        "end": {
+          "line": 65,
+          "column": 56
+        }
+      },
+      "39": {
+        "start": {
+          "line": 66,
+          "column": 16
+        },
+        "end": {
+          "line": 66,
+          "column": 28
+        }
+      },
+      "40": {
+        "start": {
+          "line": 69,
+          "column": 16
+        },
+        "end": {
+          "line": 69,
+          "column": 58
+        }
+      },
+      "41": {
+        "start": {
+          "line": 72,
+          "column": 13
+        },
+        "end": {
+          "line": 80,
+          "column": null
+        }
+      },
+      "42": {
+        "start": {
+          "line": 73,
+          "column": 12
+        },
+        "end": {
+          "line": 79,
+          "column": null
+        }
+      },
+      "43": {
+        "start": {
+          "line": 74,
+          "column": 16
+        },
+        "end": {
+          "line": 74,
+          "column": 57
+        }
+      },
+      "44": {
+        "start": {
+          "line": 75,
+          "column": 16
+        },
+        "end": {
+          "line": 75,
+          "column": 28
+        }
+      },
+      "45": {
+        "start": {
+          "line": 78,
+          "column": 16
+        },
+        "end": {
+          "line": 78,
+          "column": 58
+        }
+      },
+      "46": {
+        "start": {
+          "line": 82,
+          "column": 0
+        },
+        "end": {
+          "line": 82,
+          "column": null
+        }
+      },
+      "47": {
+        "start": {
+          "line": 5,
+          "column": 13
+        },
+        "end": {
+          "line": 5,
+          "column": 23
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 82,
+            "column": null
+          }
+        }
+      },
+      "1": {
+        "name": "BinaryTree",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 4
+          },
+          "end": {
+            "line": 7,
+            "column": 26
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 43
+          },
+          "end": {
+            "line": 8,
+            "column": 5
+          }
+        }
+      },
+      "2": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 4
+          },
+          "end": {
+            "line": 10,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 33
+          },
+          "end": {
+            "line": 12,
+            "column": 5
+          }
+        }
+      },
+      "3": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 4
+          },
+          "end": {
+            "line": 14,
+            "column": 11
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 29
+          },
+          "end": {
+            "line": 17,
+            "column": 5
+          }
+        }
+      },
+      "4": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 4
+          },
+          "end": {
+            "line": 19,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 39
+          },
+          "end": {
+            "line": 23,
+            "column": 5
+          }
+        }
+      },
+      "5": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 25,
+            "column": 4
+          },
+          "end": {
+            "line": 25,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 95
+          },
+          "end": {
+            "line": 34,
+            "column": 5
+          }
+        }
+      },
+      "6": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": {
+            "line": 36,
+            "column": 4
+          },
+          "end": {
+            "line": 36,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 36,
+            "column": 68
+          },
+          "end": {
+            "line": 50,
+            "column": 5
+          }
+        }
+      },
+      "7": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 52,
+            "column": 4
+          },
+          "end": {
+            "line": 52,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 52,
+            "column": 54
+          },
+          "end": {
+            "line": 58,
+            "column": 5
+          }
+        }
+      },
+      "8": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": {
+            "line": 56,
+            "column": 88
+          },
+          "end": {
+            "line": 56,
+            "column": 93
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 56,
+            "column": 93
+          },
+          "end": {
+            "line": 56,
+            "column": 98
+          }
+        }
+      },
+      "9": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": {
+            "line": 60,
+            "column": 4
+          },
+          "end": {
+            "line": 60,
+            "column": 10
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 60,
+            "column": 42
+          },
+          "end": {
+            "line": 81,
+            "column": 5
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 8
+          },
+          "end": {
+            "line": 20,
+            "column": 80
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 20,
+              "column": 80
+            }
+          },
+          {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 20,
+              "column": 80
+            }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 8
+          },
+          "end": {
+            "line": 26,
+            "column": 29
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 26,
+              "column": 8
+            },
+            "end": {
+              "line": 26,
+              "column": 29
+            }
+          },
+          {
+            "start": {
+              "line": 26,
+              "column": 8
+            },
+            "end": {
+              "line": 26,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 60
+          },
+          "end": {
+            "line": 28,
+            "column": 72
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 28,
+              "column": 60
+            },
+            "end": {
+              "line": 28,
+              "column": 72
+            }
+          },
+          {
+            "start": {
+              "line": 28,
+              "column": 75
+            },
+            "end": {
+              "line": 28,
+              "column": 77
+            }
+          }
+        ]
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 8
+          },
+          "end": {
+            "line": 37,
+            "column": 29
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 37,
+              "column": 8
+            },
+            "end": {
+              "line": 37,
+              "column": 29
+            }
+          },
+          {
+            "start": {
+              "line": 37,
+              "column": 8
+            },
+            "end": {
+              "line": 37,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 12
+          },
+          "end": {
+            "line": 44,
+            "column": 54
+          }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": {
+              "line": 43,
+              "column": 12
+            },
+            "end": {
+              "line": 44,
+              "column": 54
+            }
+          },
+          {
+            "start": {
+              "line": 45,
+              "column": 12
+            },
+            "end": {
+              "line": 46,
+              "column": 54
+            }
+          },
+          {
+            "start": {
+              "line": 47,
+              "column": 12
+            },
+            "end": {
+              "line": 48,
+              "column": 54
+            }
+          }
+        ]
+      },
+      "5": {
+        "loc": {
+          "start": {
+            "line": 53,
+            "column": 8
+          },
+          "end": {
+            "line": 53,
+            "column": 46
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 53,
+              "column": 8
+            },
+            "end": {
+              "line": 53,
+              "column": 46
+            }
+          },
+          {
+            "start": {
+              "line": 53,
+              "column": 8
+            },
+            "end": {
+              "line": 53,
+              "column": 46
+            }
+          }
+        ]
+      },
+      "6": {
+        "loc": {
+          "start": {
+            "line": 61,
+            "column": 26
+          },
+          "end": {
+            "line": 61,
+            "column": 33
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 61,
+              "column": 26
+            },
+            "end": {
+              "line": 61,
+              "column": 33
+            }
+          },
+          {
+            "start": {
+              "line": 61,
+              "column": 37
+            },
+            "end": {
+              "line": 61,
+              "column": 46
+            }
+          }
+        ]
+      },
+      "7": {
+        "loc": {
+          "start": {
+            "line": 63,
+            "column": 8
+          },
+          "end": {
+            "line": 80,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 63,
+              "column": 8
+            },
+            "end": {
+              "line": 80,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 63,
+              "column": 8
+            },
+            "end": {
+              "line": 80,
+              "column": null
+            }
+          }
+        ]
+      },
+      "8": {
+        "loc": {
+          "start": {
+            "line": 64,
+            "column": 12
+          },
+          "end": {
+            "line": 70,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 64,
+              "column": 12
+            },
+            "end": {
+              "line": 70,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 64,
+              "column": 12
+            },
+            "end": {
+              "line": 70,
+              "column": null
+            }
+          }
+        ]
+      },
+      "9": {
+        "loc": {
+          "start": {
+            "line": 72,
+            "column": 13
+          },
+          "end": {
+            "line": 80,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 72,
+              "column": 13
+            },
+            "end": {
+              "line": 80,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 72,
+              "column": 13
+            },
+            "end": {
+              "line": 80,
+              "column": null
+            }
+          }
+        ]
+      },
+      "10": {
+        "loc": {
+          "start": {
+            "line": 73,
+            "column": 12
+          },
+          "end": {
+            "line": 79,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 73,
+              "column": 12
+            },
+            "end": {
+              "line": 79,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 73,
+              "column": 12
+            },
+            "end": {
+              "line": 79,
+              "column": null
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 4,
+      "4": 2,
+      "5": 9,
+      "6": 2,
+      "7": 1,
+      "8": 1,
+      "9": 2,
+      "10": 4,
+      "11": 1,
+      "12": 3,
+      "13": 2,
+      "14": 195,
+      "15": 102,
+      "16": 93,
+      "17": 93,
+      "18": 2,
+      "19": 81,
+      "20": 42,
+      "21": 39,
+      "22": 39,
+      "23": 39,
+      "24": 13,
+      "25": 13,
+      "26": 13,
+      "27": 2,
+      "28": 14,
+      "29": 1,
+      "30": 13,
+      "31": 13,
+      "32": 44,
+      "33": 13,
+      "34": 2,
+      "35": 72,
+      "36": 72,
+      "37": 23,
+      "38": 12,
+      "39": 12,
+      "40": 11,
+      "41": 49,
+      "42": 49,
+      "43": 16,
+      "44": 16,
+      "45": 33,
+      "46": 2,
+      "47": 2
+    },
+    "f": {
+      "0": 2,
+      "1": 4,
+      "2": 9,
+      "3": 1,
+      "4": 4,
+      "5": 195,
+      "6": 81,
+      "7": 14,
+      "8": 44,
+      "9": 72
+    },
+    "b": {
+      "0": [
+        1,
+        3
+      ],
+      "1": [
+        102,
+        93
+      ],
+      "2": [
+        15,
+        78
+      ],
+      "3": [
+        42,
+        39
+      ],
+      "4": [
+        13,
+        13,
+        13
+      ],
+      "5": [
+        1,
+        13
+      ],
+      "6": [
+        72,
+        24
+      ],
+      "7": [
+        23,
+        49
+      ],
+      "8": [
+        12,
+        11
+      ],
+      "9": [
+        49,
+        0
+      ],
+      "10": [
+        16,
+        33
+      ]
+    }
+  },
+  "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/implementations/merge-sort.ts": {
+    "path": "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/implementations/merge-sort.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 25
+        },
+        "end": {
+          "line": 34,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 13,
+          "column": null
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 8
+        },
+        "end": {
+          "line": 5,
+          "column": 21
+        }
+      },
+      "3": {
+        "start": {
+          "line": 7,
+          "column": 20
+        },
+        "end": {
+          "line": 7,
+          "column": 48
+        }
+      },
+      "4": {
+        "start": {
+          "line": 9,
+          "column": 32
+        },
+        "end": {
+          "line": 9,
+          "column": 79
+        }
+      },
+      "5": {
+        "start": {
+          "line": 10,
+          "column": 33
+        },
+        "end": {
+          "line": 10,
+          "column": 77
+        }
+      },
+      "6": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 12,
+          "column": 56
+        }
+      },
+      "7": {
+        "start": {
+          "line": 16,
+          "column": 24
+        },
+        "end": {
+          "line": 16,
+          "column": 26
+        }
+      },
+      "8": {
+        "start": {
+          "line": 17,
+          "column": 16
+        },
+        "end": {
+          "line": 17,
+          "column": 17
+        }
+      },
+      "9": {
+        "start": {
+          "line": 17,
+          "column": 23
+        },
+        "end": {
+          "line": 17,
+          "column": 24
+        }
+      },
+      "10": {
+        "start": {
+          "line": 19,
+          "column": 8
+        },
+        "end": {
+          "line": 30,
+          "column": null
+        }
+      },
+      "11": {
+        "start": {
+          "line": 20,
+          "column": 12
+        },
+        "end": {
+          "line": 29,
+          "column": null
+        }
+      },
+      "12": {
+        "start": {
+          "line": 21,
+          "column": 16
+        },
+        "end": {
+          "line": 21,
+          "column": 42
+        }
+      },
+      "13": {
+        "start": {
+          "line": 22,
+          "column": 16
+        },
+        "end": {
+          "line": 22,
+          "column": 20
+        }
+      },
+      "14": {
+        "start": {
+          "line": 23,
+          "column": 19
+        },
+        "end": {
+          "line": 29,
+          "column": null
+        }
+      },
+      "15": {
+        "start": {
+          "line": 24,
+          "column": 16
+        },
+        "end": {
+          "line": 24,
+          "column": 42
+        }
+      },
+      "16": {
+        "start": {
+          "line": 25,
+          "column": 16
+        },
+        "end": {
+          "line": 25,
+          "column": 20
+        }
+      },
+      "17": {
+        "start": {
+          "line": 27,
+          "column": 16
+        },
+        "end": {
+          "line": 27,
+          "column": 42
+        }
+      },
+      "18": {
+        "start": {
+          "line": 28,
+          "column": 16
+        },
+        "end": {
+          "line": 28,
+          "column": 20
+        }
+      },
+      "19": {
+        "start": {
+          "line": 32,
+          "column": 8
+        },
+        "end": {
+          "line": 32,
+          "column": 23
+        }
+      },
+      "20": {
+        "start": {
+          "line": 3,
+          "column": 13
+        },
+        "end": {
+          "line": 3,
+          "column": 25
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 25
+          },
+          "end": {
+            "line": 3,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 76
+          },
+          "end": {
+            "line": 34,
+            "column": 1
+          }
+        }
+      },
+      "1": {
+        "name": "merge",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 13
+          },
+          "end": {
+            "line": 15,
+            "column": 18
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 47
+          },
+          "end": {
+            "line": 33,
+            "column": 5
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 4
+          },
+          "end": {
+            "line": 13,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 4,
+              "column": 4
+            },
+            "end": {
+              "line": 13,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 4,
+              "column": 4
+            },
+            "end": {
+              "line": 13,
+              "column": null
+            }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 15
+          },
+          "end": {
+            "line": 19,
+            "column": 34
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 19,
+              "column": 15
+            },
+            "end": {
+              "line": 19,
+              "column": 34
+            }
+          },
+          {
+            "start": {
+              "line": 19,
+              "column": 38
+            },
+            "end": {
+              "line": 19,
+              "column": 57
+            }
+          }
+        ]
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 12
+          },
+          "end": {
+            "line": 29,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 20,
+              "column": 12
+            },
+            "end": {
+              "line": 29,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 20,
+              "column": 12
+            },
+            "end": {
+              "line": 29,
+              "column": null
+            }
+          }
+        ]
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 19
+          },
+          "end": {
+            "line": 29,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 23,
+              "column": 19
+            },
+            "end": {
+              "line": 29,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 23,
+              "column": 19
+            },
+            "end": {
+              "line": 29,
+              "column": null
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 1,
+      "1": 2000,
+      "2": 1001,
+      "3": 999,
+      "4": 999,
+      "5": 999,
+      "6": 999,
+      "7": 999,
+      "8": 999,
+      "9": 999,
+      "10": 999,
+      "11": 9976,
+      "12": 649,
+      "13": 649,
+      "14": 9327,
+      "15": 4395,
+      "16": 4395,
+      "17": 4932,
+      "18": 4932,
+      "19": 999,
+      "20": 1
+    },
+    "f": {
+      "0": 2000,
+      "1": 999
+    },
+    "b": {
+      "0": [
+        1001,
+        999
+      ],
+      "1": [
+        10975,
+        1648
+      ],
+      "2": [
+        649,
+        9327
+      ],
+      "3": [
+        4395,
+        4932
+      ]
+    }
+  },
+  "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/models/traverse-type.ts": {
+    "path": "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/models/traverse-type.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": null
+        }
+      },
+      "1": {
+        "start": {
+          "line": 2,
+          "column": 4
+        },
+        "end": {
+          "line": 2,
+          "column": null
+        }
+      },
+      "2": {
+        "start": {
+          "line": 3,
+          "column": 4
+        },
+        "end": {
+          "line": 3,
+          "column": null
+        }
+      },
+      "3": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 4,
+          "column": null
+        }
+      },
+      "4": {
+        "start": {
+          "line": 5,
+          "column": 4
+        },
+        "end": {
+          "line": 5,
+          "column": null
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 24
+          },
+          "end": {
+            "line": 6,
+            "column": 1
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 12
+          },
+          "end": {
+            "line": 1,
+            "column": 24
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 1,
+              "column": 12
+            },
+            "end": {
+              "line": 1,
+              "column": 24
+            }
+          },
+          {
+            "start": {
+              "line": 1,
+              "column": 12
+            },
+            "end": {
+              "line": 1,
+              "column": null
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "f": {
+      "0": 2
+    },
+    "b": {
+      "0": [
+        2,
+        2
+      ]
+    }
+  },
+  "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/models/tree-node.ts": {
+    "path": "/home/natalia/evolution/evo-ts-bootcamp/homeworks/03-data-structure/models/tree-node.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 23
+        },
+        "end": {
+          "line": 5,
+          "column": 31
+        }
+      },
+      "2": {
+        "start": {
+          "line": 6,
+          "column": 8
+        },
+        "end": {
+          "line": 6,
+          "column": 25
+        }
+      },
+      "3": {
+        "start": {
+          "line": 7,
+          "column": 8
+        },
+        "end": {
+          "line": 7,
+          "column": 26
+        }
+      },
+      "4": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": null
+        }
+      },
+      "5": {
+        "start": {
+          "line": 1,
+          "column": 13
+        },
+        "end": {
+          "line": 1,
+          "column": 21
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 9,
+            "column": null
+          }
+        }
+      },
+      "1": {
+        "name": "TreeNode",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 4
+          },
+          "end": {
+            "line": 5,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 31
+          },
+          "end": {
+            "line": 8,
+            "column": 5
+          }
+        }
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 2,
+      "1": 33,
+      "2": 33,
+      "3": 33,
+      "4": 2,
+      "5": 2
+    },
+    "f": {
+      "0": 2,
+      "1": 33
+    },
+    "b": {}
+  }
+}
