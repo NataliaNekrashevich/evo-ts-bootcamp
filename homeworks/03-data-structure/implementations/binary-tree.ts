@@ -22,7 +22,7 @@ export class BinaryTree<T> implements IBinaryTree<T> {
         return this.combineByLevel(columnOrder, 0, this.root);
     }
 
-    insert(value: T, current?: TreeNode<T>) {
+    insert(value: T, current?: TreeNode<T>): BinaryTree<T> {
         const startNode = current || this.root;
 
         if (value < startNode.value) {

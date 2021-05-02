@@ -33,10 +33,7 @@ test('should insert in binary tree', () => {
     }
     const root = new TreeNode(5);
     const tree = new BinaryTree(root);
-    tree.insert(2, root)
-    tree.insert(1, root)
-    tree.insert(6, root)
-    tree.insert(7, root)
+    tree.insert(2, root).insert(1, root).insert(6, root).insert(7, root)
     expect(tree).toEqual(treeMock)
 })
 

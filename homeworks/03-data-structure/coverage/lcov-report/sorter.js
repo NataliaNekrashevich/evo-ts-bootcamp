@@ -11,17 +11,14 @@ var addSorting = (function () {
     function getTable() {
         return document.querySelector('.coverage-summary');
     }
-
     // returns the thead element of the summary table
     function getTableHeader() {
         return getTable().querySelector('thead tr');
     }
-
     // returns the tbody element of the summary table
     function getTableBody() {
         return getTable().querySelector('tbody');
     }
-
     // returns the th element for nth column
     function getNthColumn(n) {
         return getTableHeader().querySelectorAll('th')[n];
@@ -51,7 +48,6 @@ var addSorting = (function () {
         }
         return cols;
     }
-
     // attaches a data attribute to every tr element with an object
     // of data values keyed by column name
     function loadRowData(tableRow) {
@@ -72,7 +68,6 @@ var addSorting = (function () {
         }
         return data;
     }
-
     // loads all row data
     function loadData() {
         var rows = getTableBody().querySelectorAll('tr'),
@@ -82,7 +77,6 @@ var addSorting = (function () {
             rows[i].data = loadRowData(rows[i]);
         }
     }
-
     // sorts the table using the data for the ith column
     function sortByIndex(index, desc) {
         var key = cols[index].key,
@@ -114,7 +108,6 @@ var addSorting = (function () {
             tableBody.appendChild(rows[i]);
         }
     }
-
     // removes sort indicators for current column being sorted
     function removeSortIndicators() {
         var col = getNthColumn(currentSort.index),
@@ -123,14 +116,12 @@ var addSorting = (function () {
         cls = cls.replace(/ sorted$/, '').replace(/ sorted-desc$/, '');
         col.className = cls;
     }
-
     // adds sort indicators for current column being sorted
     function addSortIndicators() {
         getNthColumn(currentSort.index).className += currentSort.desc
             ? ' sorted-desc'
             : ' sorted';
     }
-
     // adds event listeners for all sorter widgets
     function enableUI() {
         var i,
@@ -164,7 +155,6 @@ var addSorting = (function () {
             }
         }
     }
-
     // adds sorting functionality to the UI
     return function () {
         if (!getTable()) {
