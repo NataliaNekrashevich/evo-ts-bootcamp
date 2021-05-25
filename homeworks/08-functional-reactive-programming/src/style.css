@@ -1,0 +1,52 @@
+#dog {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    color: white;
+    cursor: url('../assets/cursor.svg') 8 8, auto;
+    background-image: url('../assets/dog.jpg');
+    background-repeat: round;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game {
+    position: relative;
+    width: 50%;
+}
+
+#field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    border-collapse: collapse;
+    background-image: url('../assets/grass.png');
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: #788d8a 1px solid;
+    box-sizing: border-box;
+}
+
+.info-rec {
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
